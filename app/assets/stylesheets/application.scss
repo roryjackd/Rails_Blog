@@ -168,4 +168,32 @@ body {
 
  .card-block {
    color: black;
+   text-align: left;
  }
+
+ .auth-links a {
+    color: black;
+ }
+
+ .register-text {
+  text-align: right;
+ }
+
+ .me {
+    margin-left: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mn {
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.login > .card {
+  width: 22em;
+  margin: 0 auto;
+  float: none;
+}
