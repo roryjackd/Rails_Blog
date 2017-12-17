@@ -7,21 +7,21 @@
       <% blog.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
-      </ul>
+      </ul>, class: 'form-control'
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :blog_title %>
+    <%= form.text_field :title, id: :blog_title, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :body %>
-    <%= form.text_area :body, id: :blog_body %>
+    <%= form.text_area :body, id: :blog_body, class: 'form-control', rows:15 %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit "Submit", class: 'btn btn-primary' %>
   </div>
 <% end %>
