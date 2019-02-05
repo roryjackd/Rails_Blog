@@ -17,10 +17,14 @@
   </head>
 
   <body>
-      
     <%= render 'shared/portfolio_nav' %>
 
     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
+        <% if logged_in?(:site_admin) %>  
+          <div class="">
+            <%= link_to "Add New Item", new_portfolio_path, class: 'btn btn-warning' %>
+          </div>
+        <% end %>  
 
       <%= yield %>
 
